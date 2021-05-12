@@ -1,4 +1,6 @@
-
+/*
+Вставка данных
+*/
 INSERT INTO Customers(cust_name, cust_address, cust_city, cust_state, cust_zip, cust_country, cust_contact, cust_email)
 VALUES
     ('Village Toys', '200 Maple Lane', 'Detroit', 'MI', '44444', 'USA', 'John Smith', 'sales@villagetoys.com'),
@@ -9,12 +11,12 @@ VALUES
 
 INSERT INTO Vendors(vend_id, vend_name, vend_address, vend_city, vend_state, vend_zip, vend_country)
 VALUES
-    ('BRS01','Bears R Us','123 Main Street','Bear Town','MI','44444', 'USA'),
-    ('BRE02','Bear Emporium','500 Park Street','Anytown','OH','44333', 'USA'),
-    ('DLL01','Doll House Inc.','555 High Street','Dollsville','CA','99999', 'USA'),
-    ('FRB01','Furball Inc.','1000 5th Avenue','New York','NY','11111', 'USA'),
-    ('FNG01','Fun and Games','42 Galaxy Road','London', NULL,'N16 6PS', 'England'),
-    ('JTS01','Jouets et ours','1 Rue Amusement','Paris', NULL,'45678', 'France');
+    ('BRS01', 'Bears R Us', '123 Main Street', 'Bear Town', 'MI', '44444', 'USA'),
+    ('BRE02', 'Bear Emporium', '500 Park Street', 'Anytown', 'OH', '44333', 'USA'),
+    ('DLL01', 'Doll House Inc.', '555 High Street', 'Dollsville', 'CA', '99999', 'USA'),
+    ('FRB01', 'Furball Inc.', '1000 5th Avenue', 'New York', 'NY', '11111', 'USA'),
+    ('FNG01', 'Fun and Games', '42 Galaxy Road', 'London', NULL, 'N16 6PS', 'England'),
+    ('JTS01', 'Jouets et ours', '1 Rue Amusement', 'Paris', NULL, '45678', 'France');
 
 INSERT INTO Products(vend_id, prod_name, prod_price, prod_desc)
 VALUES
