@@ -152,7 +152,7 @@ SELECT Customers.cust_id, Orders.order_num
 FROM Orders FULL OUTER JOIN Customers
 ON Orders.cust_id = Customers.cust_id;
 */
-/*Заменя для MySql*/
+/*Замена для MySql*/
 SELECT Customers.cust_id, Orders.order_num
 FROM Orders LEFT OUTER JOIN Customers
 ON Orders.cust_id = Customers.cust_id
@@ -162,7 +162,7 @@ FROM Orders RIGHT OUTER JOIN Customers
 ON Orders.cust_id = Customers.cust_id;
 
 /* Aggregate Functions */
-SELECt Customers.cust_id, COUNT(Orders.order_num) AS num_ord
+SELECT Customers.cust_id, COUNT(Orders.order_num) AS num_ord
 FROM Customers INNER JOIN Orders
 ON Customers.cust_id = Orders.cust_id
 GROUP BY Customers.cust_id;
