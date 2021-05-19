@@ -5,7 +5,7 @@ CREATE DATABASE IF NOT EXISTS db_test;
 use db_test;
 DROP TABLE IF EXISTS Vendors;
 CREATE TABLE Vendors (
-    vend_id VARCHAR(5) AUTO_INCREMENT PRIMARY KEY,
+    vend_id VARCHAR(5) PRIMARY KEY,
     vend_name VARCHAR(200) NOT NULL,
     vend_address VARCHAR(250),
     vend_city VARCHAR(100),
