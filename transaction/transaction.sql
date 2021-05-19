@@ -1,5 +1,3 @@
-
-
 /*Order cannot be empty, so order must be created and filled with items*/
 START TRANSACTION;
 /* Creating new order */
@@ -17,7 +15,6 @@ FROM Orders
 SELECT LAST_INSERT_ID()
 ;
 
-
 /*Insert this id in new insert statement in code*/
 
 INSERT INTO OrderItems(order_num, order_item, prod_id, quantity, item_price)
@@ -26,7 +23,4 @@ INSERT INTO OrderItems(order_num, order_item, prod_id, quantity, item_price)
 ;
 /* If error when executing one of this 2 statements need to ROLLBACK from code*/
 COMMIT;
-
-/* If somewhere in the process */
-
 
